@@ -1,9 +1,17 @@
 body {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: "PTSans";
+	font-family: "PT Sans" sans-serif;
+	background-color: #f2f2f2;
+	text-transform: uppercase;
+}
+
+.container {
+	background-color: #ffffff;
 }
 
 .title {
@@ -11,12 +19,145 @@ body {
 	line-height: 36px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PTSans";
+	font-family: "PT Sans" sans-serif;
+
 }
 .caption {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PTSans";
+	font-family: "PT Sans" sans-serif;
+}
+
+.main-nav ul{
+    list-style: none;
+    font-weight: bold;
+}
+
+.main-nav a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: #81b3d2;
+}
+
+.main-nav a:focus {
+	color: #b2b2b2;
+}
+
+.main-nav a:active {
+	color: #9b8d84;
+}
+
+.advantage-one-content,
+.advantage-two-content {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.advantage-one-content .caption,
+.advantage-two-content .caption {
+	color: #ffffff;
+}
+
+.advantage-service ul,
+.advantages-list ul {
+	list-style: none;
+}
+
+.advantages-list {
+	background-color: #eeeeee;
+}
+
+
+.form-search label {
+    font: inherit;
+    font-weight: bold;
+}
+
+.btn {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.btn-brown {
+	background-color: #766357;
+}
+
+.form-search .btn-brown:hover {
+    background-color: #604e43;
+}
+
+.form-search .btn-brown:focus, 
+.form-search .btn-brown:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-blue {
+	background-color: #81b3d2;
+}
+
+.form-search .btn-blue:hover,
+.social a:hover {
+    background-color: #669ec0;
+}
+
+.form-search .btn-blue:focus, 
+.form-search .btn-blue:active,
+.social a:focus,
+.social a:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.field {
+	color: #333333;
+	font-weight: bold;
+	background-color: #f2f2f2;
+}
+
+.field:hover {
+	background-color: #ebebeb;
+}
+
+.field:focus,
+.field:active {
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	outline: 0;
+}
+
+.social ul {
+    list-style: none;
+    font-weight: bold;
+}
+
+.social a{
+    color: #ffffff;
+	text-decoration: none;
+	background-color: #81b3d2;
+}
+
+.main-footer span {
+	font-weight: bold;
+}
+
+.academy span {
+	font-weight: normal;
+}
+
+.academy a {
+	font-weight: bold;
+	color: #333333;
+	text-decoration: none;
+}
+
+.visually-hidden {
+	display: none;
 }
