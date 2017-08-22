@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="css/Normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
-    <body>
+    <body class="page">
         <div class="container">
             <header class="main-header">
         	    <a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
@@ -66,14 +66,14 @@
                             </table>
                             <input type="range" name="range">
                             <p>
-                                <button class="filtering-btn">Показать</button>
+                                <button class="btn filtering-btn">Показать</button>
                             </p>
                         </div>
                     </form>
                 </section>
                 <section class="sorting">
                     <h2 class="visually-hidden">Сортировка</h2>
-                    <span>Найдено: 3</span>
+                    <span class="found">Найдено: 3</span>
                     <span>Сортировка:</span>
                     <ul class="sorting-of-type">
                         <li><span class="sorting-item active">По цене</span></li>
@@ -82,15 +82,14 @@
                     </ul>
                     <ul class="sorting-arrows">
                         <li><a href="#" class="up">По возрастанию</a></li>
-                        <li><a href="#" class="down">По убыванию</a></li>
-                    
+                        <li><a href="#" class="down active">По убыванию</a></li>
                     </ul>
                 </section>
                 <section class="hotels">
                     <h1 class="visually-hidden">Отели</h1>
                     <article class="hotels-amara">
                         <img class="hotels-image" src="img/hotel-1.jpg" alt="Фото-1" width="135px" height="95px">
-                        <h2 class="title">Amara resort &amp; spa</h2>
+                        <h2 class="title"><a href="#">Amara resort &amp; spa</a></h2>
                         <table class="hotels-cost">
                             <tr>
                                 <td>Гостиница</td>
@@ -101,11 +100,11 @@
                             <a href="#" class="btn btn-blue">Подробнее</a>
                             <a href="#" class="btn btn-brown">Забронировать</a>
                         </p>
-                        <span>Рейтинг: 8,5</span>
+                        <span class="rating">Рейтинг: 8,5</span>
                     </article>
                     <article class="hotels-desert">
                         <img class="hotels-image" src="img/hotel-2.jpg" alt="Фото-2" width="135px" height="95px">
-                        <h2 class="title">Desert quail inn</h2>
+                        <h2 class="title"><a href="#">Desert quail inn</a></h2>
                         <table class="hotels-cost">
                             <tr>
                                 <td>Мотель</td>
@@ -116,11 +115,11 @@
                             <a href="#" class="btn btn-blue">Подробнее</a>
                             <a href="#" class="btn btn-brown">Забронировать</a>
                         </p>
-                        <span>Рейтинг: 8,9</span>
+                        <span class="rating">Рейтинг: 8,9</span>
                     </article>
                     <article class="hotels-villas">
                         <img class="hotels-image" src="img/hotel-3.jpg" alt="Фото-3" width="135px" height="95px">
-                        <h2 class="title">Villas at poco diablo</h2>
+                        <h2 class="title"><a href="#">Villas at poco diablo</a></h2>
                         <table class="hotels-cost">
                             <tr>
                                 <td>Апартаменты</td>
@@ -131,7 +130,7 @@
                             <a href="#" class="btn btn-blue">Подробнее</a>
                             <a href="#" class="btn btn-brown">Забронировать</a>
                         </p>
-                        <span>Рейтинг: 9,2</span>
+                        <span class="rating">Рейтинг: 9,2</span>
                     </article>
                 </section>
             </main>
@@ -144,8 +143,10 @@
                         <li><a href="#" class="social-yt">Youtube</a></li>
                     </ul>
                 </div>
-                <span>Website by</span>
-                <a href="#">HTML Academy</a>
+                <p class="academy">
+                    <span>Website by</span>
+                    <a href="#">HTML Academy</a>
+                </p>
             </footer>
         </div>
     </body>

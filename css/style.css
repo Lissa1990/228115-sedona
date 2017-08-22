@@ -1,15 +1,16 @@
 @font-face { 
-  font-family: 'PT Sans'; 
-  src: url('../fonts/ptsans') format('woff2'); 
+  font-family: "PT Sans"; 
+  src: url("../fonts/ptsans") format("woff2"); 
   font-weight: normal; 
   font-style: normal; 
 }
 
-
-
-
-
-
+@font-face { 
+  font-family: "PT Sans"; 
+  src: url("../fonts/ptsansbold") format("woff2"); 
+  font-weight: bold; 
+  font-style: normal; 
+}
 
 body {
 	margin: 0;
@@ -18,7 +19,7 @@ body {
 	line-height: 21px;
 	color: #333333;
 	font-weight: normal;
-	font-family: "PT Sans" sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	background-color: #f2f2f2;
 	text-transform: uppercase;
 }
@@ -32,15 +33,17 @@ body {
 	line-height: 36px;
 	color: #000000;
 	font-weight: bold;
-	font-family: "PT Sans" sans-serif;
-
 }
 .caption {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	font-weight: bold;
-	font-family: "PT Sans" sans-serif;
+	font-weight: bold;	
+}
+
+.sedona b {
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .main-nav ul{
@@ -86,8 +89,12 @@ body {
 }
 
 .form-search label {
-    font: inherit;
+    color: #000000;
     font-weight: bold;
+}
+
+.form-search input::placeholder {
+	color: #000000;
 }
 
 .btn {
@@ -101,12 +108,12 @@ body {
 	background-color: #766357;
 }
 
-.form-search .btn-brown:hover {
+.btn-brown:hover {
     background-color: #604e43;
 }
 
-.form-search .btn-brown:focus, 
-.form-search .btn-brown:active {
+.btn-brown:focus, 
+.btn-brown:active {
     background-color: #503e33;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -115,13 +122,13 @@ body {
 	background-color: #81b3d2;
 }
 
-.form-search .btn-blue:hover,
+.btn-blue:hover,
 .social a:hover {
     background-color: #669ec0;
 }
 
-.form-search .btn-blue:focus, 
-.form-search .btn-blue:active,
+.btn-blue:focus, 
+.btn-blue:active,
 .social a:focus,
 .social a:active {
     background-color: #5496bd;
@@ -157,6 +164,7 @@ body {
 }
 
 .main-footer span {
+	color: #000000;
 	font-weight: bold;
 }
 
@@ -170,6 +178,133 @@ body {
 	text-decoration: none;
 }
 
+.academy a:hover {
+    color: #81b3d2;
+}
+
+.academy a:focus,
+.academy a:active {
+	color: #bdbbbc;
+}
+
 .visually-hidden {
 	display: none;
 }
+
+.main-nav .active {
+    color: #766357;
+}
+
+.page {
+	background-color: #fefefe;
+}
+
+.page .main-header {
+	background-color: #ffffff;
+}
+
+.filtering {
+	background: #ffffff url("../img/filter.jpg") no-repeat 0 0;
+}
+
+.filtering-type,
+.filtering-type h3,
+.filtering-cost,
+.filtering-cost h3 {
+	color: #ffffff;
+}
+
+.filtering-btn {
+	background-color: transparent;
+	border: 1px solid #ffffff;
+}
+
+.filtering-cost table {
+	border-collapse: collapse;
+}
+
+.filtering-cost td {
+	border: 1px solid #ffffff;
+}
+
+.filtering-type ul,
+.filtering-cost ul,
+.sorting-of-type,
+.sorting-arrows {
+	list-style: none;
+}
+
+.sorting span {
+	color: #000000;
+}
+
+.sorting .found {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sorting-of-type a,
+.sorting-arrows a {
+	text-decoration: none;
+	color: #cacaca;
+}
+
+.sorting-of-type a {
+	border-bottom: 1px dashed #cacaca;
+}
+
+.sorting-of-type a:hover {
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-of-type a:focus,
+.sorting-of-type a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.sorting-of-type .active {
+	color: #81b3d2;
+}
+
+.sorting-arrows a:hover {
+	color: #000000;
+}
+
+.sorting-arrows a:focus,
+.sorting-arrows a:active {
+	color: #81b3d2;
+}
+
+.sorting-arrows .active {
+	color: #81b3d2;
+}
+
+.hotels article {
+	border-top: 1px solid #cacaca;
+}
+
+.hotels .hotels-villas {
+	border-bottom: 1px solid #cacaca;
+}
+
+.title a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.title a:hover {
+	color: #81b3d2;
+}
+
+.title a:focus,
+.title a:active {
+	color: #b2b2b2;
+}
+
+.hotels .rating {
+	background-color: #f2f2f2;
+}
+
