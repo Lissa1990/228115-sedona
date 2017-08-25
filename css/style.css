@@ -26,6 +26,7 @@ body {
 
 .container {
 	background-color: #ffffff;
+	width: 1200px;
 }
 
 .title {
@@ -34,6 +35,7 @@ body {
 	color: #000000;
 	font-weight: bold;
 }
+
 .caption {
 	font-size: 21px;
 	line-height: 21px;
@@ -49,6 +51,8 @@ body {
 .main-nav ul{
     list-style: none;
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
 
 .main-nav a {
@@ -82,6 +86,8 @@ body {
 .advantage-service ul,
 .advantages-list ul {
 	list-style: none;
+	margin: 0px;
+    padding: 0px;
 }
 
 .advantages-list {
@@ -155,6 +161,8 @@ body {
 .social ul {
     list-style: none;
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
 
 .social a{
@@ -191,20 +199,14 @@ body {
 	display: none;
 }
 
+/*Hotels*/
+
 .main-nav .active {
     color: #766357;
 }
 
-.page {
+.page .main {
 	background-color: #fefefe;
-}
-
-.page .main-header {
-	background-color: #ffffff;
-}
-
-.filtering {
-	background: #ffffff url("../img/filter.jpg") no-repeat 0 0;
 }
 
 .filtering-type,
@@ -232,6 +234,8 @@ body {
 .sorting-of-type,
 .sorting-arrows {
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 
 .sorting span {
@@ -307,4 +311,162 @@ body {
 .hotels .rating {
 	background-color: #f2f2f2;
 }
+
+/*Сетка*/
+
+.main-header {
+	height: 55px;
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-header div {
+	order: 2;
+}
+
+.main-nav .part-one {
+	order: 1;
+}
+
+.main-nav .part-two {
+	order: 3;
+}
+
+.main-nav ul{
+	display: flex;
+	align-items: center;
+    height: 55px;
+    flex-basis: 530px;
+}
+
+.main-nav li {
+   margin: 0 auto;
+}
+
+.welcome{
+	background-image: url("../img/intro.jpg"); 
+	min-height: 725px;
+	display: flex;
+	justify-content: center;
+}
+
+.sedona {
+	align-self: flex-end;
+}
+
+.advantage-one {
+	min-height: 255px;
+	display: flex;
+}
+
+.advantage-one-content {
+	width: 400px;
+}
+
+.advantage-service ul {
+	display: flex;
+	min-height: 330px;
+	align-items: center;
+}
+
+.advantage-two {
+	min-height: 255px;
+	display: flex;
+}
+
+.advantage-two-content {
+	width: 400px;
+}
+
+.advantages-list ul{
+	min-height: 255px;
+	display: flex;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+	min-height: 120px;
+	align-items: center;
+}
+
+/*Сетка Hotels*/
+
+.filtering {
+	background-image: url("../img/filter.jpg");
+	display: flex;
+	min-height: 215px;
+}
+
+.filtering form {
+	display: flex;
+}
+
+.filtering-type,
+.filtering-cost {
+	display: flex;	
+}
+
+.filtering-type ul {
+    width: 140px;   
+}
+
+.filtering-cost {
+	width: 320px;
+	flex-direction: column;
+}
+
+.sorting {
+	display: flex;
+	height: 85px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sorting-of-type {
+	display: flex;
+}
+
+.sorting-of-type li {
+	width: 100px;
+}
+
+.sorting-arrows {
+	display: flex;
+	margin-left: auto;
+}
+
+
+.sorting-arrows li {
+	width: 100px;
+}
+
+.hotels-amara,
+.hotels-desert,
+.hotels-villas {
+	display: flex;
+	min-height: 150px;
+	align-items: center;
+}
+
+.hotels div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 30px;
+}
+
+
+
+
+
+
 
