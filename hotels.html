@@ -9,16 +9,14 @@
     <body class="page">
         <div class="container">
             <header class="main-header">
-        	    <nav class="main-nav">
-                    <div>
-                        <a href="index.html">    <img src="img/logo.png" alt="Логотип">
+                <div>
+                    <a href="index.html">    <img src="img/logo.png" alt="Логотип">
                         </a>
-                    </div>
-        		    <ul class="part-one">
+                </div>
+        	    <nav class="main-nav">
+        		    <ul class="nav-list">
         			    <li><a class="main-item" href="#">Информация</a></li>
         			    <li><a class="main-item" href="#">Фото и видео</a></li>
-                     </ul>
-                     <ul class="part-two">   
         			    <li><a class="main-item" href="#">Карта штата</a></li>
         			    <li><span class="main-item active">Гостиницы</span></li>
         		    </ul>
@@ -27,7 +25,7 @@
             <main class="main-content">
                 <section class="filtering">
                     <form method="post" action="#" class="filtering-list">
-                        <div class="filtering-type">
+                        <div class="filter-item">
                             <h3 class="caption">Инфраструктура:</h3>
                             <ul >
                                 <li>
@@ -43,6 +41,8 @@
                                     <label for="wi-fi">Wi-fi</label>
                                 </li>
                             </ul>
+                        </div>
+                        <div class="filter-item complex">
                             <h3 class="caption">Тип жилья:</h3>
                             <ul >
                                 <li>
@@ -75,26 +75,22 @@
                     </form>
                 </section>
                 <section class="sorting">
-                    <div>
-                        <h2 class="visually-hidden">Сортировка</h2>
-                        <span class="found">Найдено: 3</span>
-                        <span>Сортировка:</span>
-                    </div>
+                    <h2 class="visually-hidden">Сортировка</h2>
+                    <span class="found">Найдено: 3</span>
+                    <span class="sort">Сортировка:</span>
                     <ul class="sorting-of-type">
                         <li><span class="sorting-item active">По цене</span></li>
                         <li><a href="#" class="sorting-item">По типу</a></li>
                         <li><a href="#" class="sorting-item">По рейтингу</a></li>
-                    </ul>
-                    <ul class="sorting-arrows">
-                        <li><a href="#" class="up">По возрастанию</a></li>
-                        <li><a href="#" class="down active">По убыванию</a></li>
+                        <li class="sorting-arrows"><a href="#" class="up">По возрастанию</a></li>
+                        <li class="sorting-arrows"><a href="#" class="down active">По убыванию</a></li>
                     </ul>
                 </section>
                 <section class="hotels">
                     <h1 class="visually-hidden">Отели</h1>
-                    <article class="hotels-amara">
+                    <article class="hotel hotels-amara">
                         <img class="hotels-image" src="img/hotel-1.jpg" alt="Фото-1" width="135px" height="95px">
-                        <div>
+                        <section class="parameter">
                             <h2 class="title"><a href="#">Amara resort &amp; spa</a></h2>
                             <table class="hotels-cost">
                                 <tr>
@@ -106,12 +102,20 @@
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
                             </p>
+                        </section>
+                        <section class="score">
+                            <div class="stars">
+                                <span>*</span>
+                                <span>*</span>
+                                <span>*</span>
+                                <span>*</span> 
+                            </div>
                             <span class="rating">Рейтинг: 8,5</span>
-                        </div>
+                        </section>
                     </article>
-                    <article class="hotels-desert">
+                    <article class="hotel hotels-desert">
                         <img class="hotels-image" src="img/hotel-2.jpg" alt="Фото-2" width="135px" height="95px">
-                        <div>
+                        <section class="parameter">
                             <h2 class="title"><a href="#">Desert quail inn</a></h2>
                             <table class="hotels-cost">
                                 <tr>
@@ -123,12 +127,19 @@
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
                             </p>
+                        </section>
+                        <section class="score">
+                            <div class="stars">
+                                <span>*</span>
+                                <span>*</span>
+                                <span>*</span>
+                            </div>
                             <span class="rating">Рейтинг: 8,9</span>
-                        </div>
+                        </section>
                     </article>
-                    <article class="hotels-villas">
+                    <article class="hotel hotels-villas">
                         <img class="hotels-image" src="img/hotel-3.jpg" alt="Фото-3" width="135px" height="95px">
-                        <div>
+                        <section class="parameter">
                             <h2 class="title"><a href="#">Villas at poco diablo</a></h2>
                             <table class="hotels-cost">
                                 <tr>
@@ -140,20 +151,24 @@
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
                             </p>
+                        </section>
+                        <section class="score">    
+                            <div class="stars">
+                                <span>*</span>
+                                <span>*</span>
+                            </div>
                             <span class="rating">Рейтинг: 9,2</span>
-                        </div>
+                        </section>
                     </article>
                 </section>
             </main>
             <footer class="main-footer">
                 <span>#VisitSedona</span>
-                <div class="social">
-                    <ul>
-                        <li><a href="#" class="social-tw">Twitter</a></li>
-                        <li><a href="#" class="social-fb">Facebook</a></li>
-                        <li><a href="#" class="social-yt">Youtube</a></li>
+                    <ul class="social">
+                        <li><a href="#" class="social-item btn-tw">Twitter</a></li>
+                        <li><a href="#" class="social-item btn-fb">Facebook</a></li>
+                        <li><a href="#" class="social-item btn-yt">Youtube</a></li>
                     </ul>
-                </div>
                 <p class="academy">
                     <span>Website by</span>
                     <a href="#">HTML Academy</a>
