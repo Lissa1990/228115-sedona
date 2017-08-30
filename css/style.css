@@ -49,8 +49,21 @@ body {
 	height: 70px;
 }
 
-.sedona b {
+.sedona b,
+.main-footer .visit {
 	font-size: 21px;
+	line-height: 26px;
+}
+
+.sedona b,
+.sedona p {
+	width: 576px;
+	text-align: center;
+}
+
+.sedona p,
+.main-footer .academy {
+	font-size: 14px;
 	line-height: 26px;
 }
 
@@ -59,6 +72,7 @@ body {
     font-weight: bold;
     margin: 0px;
     padding: 0px;
+    line-height: 26px;
 }
 
 .main-nav a {
@@ -96,6 +110,23 @@ body {
 
 .advantages-list {
 	background-color: #eeeeee;
+}
+
+.headline p {
+	line-height: 24px;
+}
+
+.headline .btn-brown,
+.form-search .btn-blue {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.headline .btn-brown {
+	display: inline-block;
+	width: 572px;
+	padding-top: 34px;
+	padding-bottom: 34px;
 }
 
 .form-search label {
@@ -145,6 +176,21 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.btn-fb:focus,
+.btn-fb:active {
+    background-image: url("../img/fb-icon-2.svg");
+}
+
+.btn-tw:focus,
+.btn-tw:active {
+    background-image: url("../img/twitter-2.svg");
+}
+
+.btn-yt:focus,
+.btn-yt:active {
+    background-image: url("../img/youtube-2.svg");
+}
+
 .field {
 	color: #333333;
 	font-weight: bold;
@@ -175,32 +221,43 @@ body {
 	background-color: #81b3d2;
 }
 
-.main-footer span {
+.main-footer .visit {
 	color: #000000;
 	font-weight: bold;
 }
 
-.academy span {
+.academy .web {
 	font-weight: normal;
+	color: #000000;
 }
 
 .academy a {
-	font-weight: bold;
-	color: #333333;
-	text-decoration: none;
+	display: inline-block;
+	width: 118px;
+	height: 43px;
+	background: url("../img/logo-htmlacademy.svg") no-repeat;
 }
 
 .academy a:hover {
-    color: #81b3d2;
+	background: url("../img/logo-htmlacademy-blue.svg") no-repeat;
 }
 
 .academy a:focus,
 .academy a:active {
-	color: #bdbbbc;
+	background: url("../img/logo-htmlacademy-gray.svg") no-repeat;
 }
 
 .visually-hidden {
-	display: none;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /*Hotels*/
@@ -257,6 +314,11 @@ body {
 	line-height: 26px;
 }
 
+.sorting:not(.found) {
+	font-size: 12px;
+	line-height: 18px;
+}
+
 .sorting-of-type a {
 	text-decoration: none;
 	color: #cacaca;
@@ -300,6 +362,10 @@ body {
 
 .hotels .hotels-villas {
 	border-bottom: 1px solid #cacaca;
+}
+
+.hotels-btn .btn {
+	padding: 5px 15px;
 }
 
 .title a {
@@ -368,11 +434,16 @@ body {
 .advantage-item {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .item-content {
-	width: 400px;
-	min-height: 255px;
+	width: 314px;
+	min-height: 210px;
+	text-align: center;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-top: 48px;
 }
 
 .advantage-service ul {
@@ -380,8 +451,30 @@ body {
 }	
 
 .service-item {
-	width: 400px;
-	min-height: 330px;
+	width: 314px;
+	min-height: 170px;
+	text-align: center;
+	padding-left: 43px;
+	padding-right: 43px;
+	padding-top: 162px;
+}
+
+.housing {
+    background-image: url("../img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 162px 60px;
+}
+
+.food {
+    background-image: url("../img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 158px 60px;
+}
+
+.souvenir {
+    background-image: url("../img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 162px 60px;
 }
 
 .advantages-list ul{
@@ -390,12 +483,18 @@ body {
 }
 
 .form {
-	min-height: 765px;
+	min-height: 767px;
 }
 
 .headline {
-	width: 440px;
+	width: 576px;
 	margin: 0 auto;
+	text-align: center;
+	padding-top: 54px;
+}
+
+.headline p {
+	margin-bottom: 48px;
 }
 
 .main-footer {
@@ -407,6 +506,26 @@ body {
 
 .social {
 	display: flex;
+	justify-content: space-between;
+	width: 152px;
+}
+
+.social-item {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+}
+
+.btn-tw {
+	background: #81b3d2 url("../img/twitter.svg") no-repeat 50% 50%;
+}
+
+.btn-fb {
+	background: #81b3d2 url("../img/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.btn-yt {
+	background: #81b3d2 url("../img/youtube.svg") no-repeat 50% 50%;
 }
 
 /*Сетка Hotels*/
@@ -482,12 +601,14 @@ body {
 }
 
 .hotel img {
+	width: 135px;
+	height: 95px;
 	padding-left: 70px;
 	padding-right: 30px;
 }
 
 .parameter {
-	width: 270px;
+	width: 363px;
 	margin-right: auto;
 }
 
