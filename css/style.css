@@ -188,7 +188,6 @@ body {
 }
 
 .bridge .caption {
-	width: 151px;
 	padding-bottom: 2px;
 }
 
@@ -479,6 +478,9 @@ body {
 .academy .web {
 	font-weight: normal;
 	color: #000000;
+	position: relative;
+	top: 0px;
+	right: -12px;
 }
 
 .academy a {
@@ -486,6 +488,9 @@ body {
 	width: 118px;
 	height: 43px;
 	background: url("../img/logo-htmlacademy.svg") no-repeat;
+	position: relative;
+	top: 0px;
+	right: -7px;
 }
 
 .academy a:hover {
