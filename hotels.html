@@ -26,50 +26,70 @@
                     <form method="post" action="#" class="filtering-list">
                         <div class="filter-item">
                             <h3 class="caption">Инфраструктура:</h3>
-                            <ul >
-                                <li>
-                                    <input type="checkbox" name="pool" id="pool" checked>
-                                    <label for="pool">Бассейн</label>
+                            <ul>
+                                <li class="pool-checkbox">
+                                    <label for="pool" class="label-checkbox">
+                                        <input type="checkbox" name="pool" id="pool" checked class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Бассейн
+                                    </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="parking" id="parking">
-                                    <label for="parking">Парковка</label>
+                                <li class="parking-checkbox">
+                                    <label for="parking" class="label-checkbox">
+                                        <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Парковка
+                                    </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="wi-fi" id="wi-fi">
-                                    <label for="wi-fi">Wi-fi</label>
+                                <li class="wi-fi-checkbox">
+                                    <label for="wi-fi" class="label-checkbox">
+                                        <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Wi-fi
+                                    </label>
                                 </li>
                             </ul>
                         </div>
                         <div class="filter-item complex">
                             <h3 class="caption">Тип жилья:</h3>
-                            <ul >
-                                <li>
-                                    <input type="checkbox" name="hotel" id="hotel" checked>
-                                    <label for="hotel">Гостиница</label>
+                            <ul>
+                                <li class="hotel-checkbox">
+                                    <label for="hotel" class="label-checkbox">
+                                        <input type="checkbox" name="hotel" id="hotel" checked class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Гостиница
+                                    </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="motel" id="motel" checked>
-                                    <label for="motel">Мотель</label>
+                                <li class="motel-checkbox">
+                                    <label for="motel" class="label-checkbox">
+                                        <input type="checkbox" name="motel" id="motel" checked class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Мотель
+                                    </label>
                                 </li>
-                                <li>
-                                    <input type="checkbox" name="apartment" id="apartment" checked>
-                                    <label for="apartment">Апартаменты</label>
+                                <li class="apartment-checkbox">
+                                    <label for="apartment" class="label-checkbox">
+                                        <input type="checkbox" name="apartment" id="apartment" checked class="visually-hidden">
+                                        <span class="indicator"></span>
+                                        Апартаменты
+                                    </label>
                                 </li>
                             </ul>
                         </div>
                         <div class="filtering-cost">
                             <h3 class="caption">Стоимость в сутки (Р):</h3>
-                            <table>
-                                <tr>
-                                    <td>от 0</td>
-                                    <td>до 3000</td>
-                                </tr>
-                            </table>
-                            <input type="range" name="range">
-                            <p>
-                                <button class="btn filtering-btn">Показать</button>
-                            </p>
+                            <div class="filtering-price">
+                                <label class="price-min">от <input type="text" value="0"></label>
+                                <label class="price-max">до <input type="text" value="3000"></label>
+                            </div>
+                            <div class="filtering-range">
+                                <div class="range">
+                                    <div class="bar"></div>
+                                </div>
+                                <div class="range-btn btn-min"></div>
+                                <div class="range-btn btn-max"></div>
+                            </div>
+                            <button class="btn filtering-btn">Показать</button>
                         </div>
                     </form>
                 </section>
