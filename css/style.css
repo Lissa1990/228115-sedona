@@ -49,7 +49,7 @@ body {
 	position: relative;
 }
 
-.main-header img{
+.main-header .wraper {
 	position: absolute;
 	left: 0;
 	right: 0;
