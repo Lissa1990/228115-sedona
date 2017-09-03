@@ -407,7 +407,7 @@ body {
 
 .main-footer {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	min-height: 120px;
 	align-items: center;
 }
@@ -417,7 +417,7 @@ body {
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
-	padding-left: 25px;
+	padding-left: 132px;
 }
 
 .social {
@@ -428,7 +428,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 152px;
-	padding-left: 44px;
+	padding-left: 47px;
 	padding-top: 5px;
 }
 
@@ -469,28 +469,27 @@ body {
 .academy {
 	display: flex;
 	width: 205px;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 	font-size: 14px;
 	line-height: 26px;
+	margin-left: 10px;
+	padding-right: 100px;
+	padding-bottom: 1px;
 }
 
 .academy .web {
 	font-weight: normal;
 	color: #000000;
-	position: relative;
-	top: 0px;
-	right: -12px;
+	
 }
 
 .academy a {
 	display: block;
-	width: 118px;
-	height: 43px;
+	width: 115px;
+	height: 41px;
 	background: url("../img/logo-htmlacademy.svg") no-repeat;
-	position: relative;
-	top: 0px;
-	right: -7px;
+	margin-left: 10px;	
 }
 
 .academy a:hover {
