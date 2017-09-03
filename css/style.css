@@ -56,6 +56,7 @@ body {
 	margin: 0 auto;
 	width: 138px;
 	height: 70px;
+	z-index: 1;
 }
 
 .main-nav .nav-list{
@@ -116,20 +117,33 @@ body {
 }
 
 .welcome{
-	background-image: url("../img/mask.png"), url("../img/intro.jpg"); 
-	background-repeat: no-repeat, no-repeat;
-	background-position: 0 452px, 0 -55px;
+	background-image: url("../img/intro.jpg"); 
+	background-repeat: no-repeat;
+	background-position: 0 -55px;
 	min-height: 509px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
 
+.welcome::after {
+	content: "";
+	width: 1200px;
+	height: 59px;
+	background-image: url("../img/mask.png");
+	background-repeat: no-repeat;
+	position: absolute;
+    top: 452px;
+    left: 0px;
 }
 
 .welcome img {
 	width: 458px;
 	height: 352px;
-	margin-top: -4px;
+	position: absolute;
+    top: 78px;
+    left: 370px;
 }
 
 .sedona {
