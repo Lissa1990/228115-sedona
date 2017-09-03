@@ -28,6 +28,7 @@ body {
 	background-color: #ffffff;
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow: 0 0 5px 5px rgba(0, 1, 1, 0.2);
 }
 
 .title {
@@ -41,18 +42,46 @@ body {
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
-	font-weight: bold;	
+	font-weight: bold;
+}
+
+.item-content .caption,
+.service-item .caption {
+	width: 153px;	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item-content p,
+.service-item p {
+	width: 303px;
+}
+
+.service-item {
+	text-align: center;
 }
 
 .main-header img {
 	width: 138px;
 	height: 70px;
+
+}
+
+.welcome img {
+	width: 458px;
+	height: 352px;
+	margin-top: -4px;
 }
 
 .sedona b,
 .main-footer .visit {
 	font-size: 21px;
 	line-height: 26px;
+}
+
+.sedona b {
+	padding-top: 24px;
+	margin-bottom: 13px;
 }
 
 .sedona b,
@@ -97,6 +126,11 @@ body {
     background-color: #81b3d2;
 }
 
+.advantage-item img {
+	width: 800px;
+	height: 256px;
+}
+
 .advantage-item .caption {
 	color: #ffffff;
 }
@@ -127,6 +161,11 @@ body {
 	width: 572px;
 	padding-top: 34px;
 	padding-bottom: 34px;
+}
+
+.map img {
+	width: 1200px;
+	height: 593px;
 }
 
 .form-search label {
@@ -231,8 +270,15 @@ body {
 	color: #000000;
 }
 
+.academy {
+	display: flex;
+	width: 205px;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .academy a {
-	display: inline-block;
+	display: block;
 	width: 118px;
 	height: 43px;
 	background: url("../img/logo-htmlacademy.svg") no-repeat;
@@ -401,6 +447,7 @@ body {
 
 .main-nav ul{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .main-nav li {
@@ -409,22 +456,39 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-shrink: 0;
 }
 
 .main-nav li:nth-child(2) {
 	margin-right: 20%;
 }
 
+.main-nav .main-item {
+	width: 230px;
+	text-align: center;
+}
+
+.list-item:nth-child(3) .main-item {
+	padding-left: 5px;
+}
+
+.list-item:nth-child(4) .main-item {
+	padding-left: 13px;
+}
+
 .welcome{
-	background-image: url("../img/intro.jpg"); 
-	min-height: 510px;
+	background-image: url("../img/mask.png"), url("../img/intro.jpg"); 
+	background-repeat: no-repeat, no-repeat;
+	background-position: 0 452px, 0 -55px;
+	min-height: 509px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .sedona {
-	min-height: 215px;
+	min-height: 214px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -453,7 +517,7 @@ body {
 .service-item {
 	width: 314px;
 	min-height: 170px;
-	text-align: center;
+	
 	padding-left: 43px;
 	padding-right: 43px;
 	padding-top: 162px;
