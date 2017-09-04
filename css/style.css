@@ -567,7 +567,7 @@ body {
 	position: relative;
 	top: 0;
 	left: 0;
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .main-footer .visit {
@@ -1090,9 +1090,8 @@ body {
 	display: flex;
 	min-height: 150px;
 	align-items: flex-start;
-	justify-content: space-between;
-	padding: 0px 70px;
-	padding-top: 30px;
+	justify-content: flex-start;
+	padding: 30px 70px;
 }
 
 .hotel .wraper-img {
@@ -1157,6 +1156,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	margin-left: auto;
 }
 
 .stars span {
