@@ -120,7 +120,6 @@ body {
 	background-image: url("../img/intro.jpg"); 
 	background-repeat: no-repeat;
 	background-position: 0 -55px;
-	min-height: 509px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -141,6 +140,8 @@ body {
 .welcome img {
 	width: 458px;
 	height: 352px;
+	padding-top: 78px;
+	padding-bottom: 79px;
 }
 
 .sedona {
@@ -429,6 +430,14 @@ body {
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	outline: 0;
+}
+
+.date {
+	margin: 0 auto;
+}
+
+.date-on {
+	margin-top: 50px;
 }
 
 .main-footer {
