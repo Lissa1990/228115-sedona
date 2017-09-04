@@ -357,6 +357,7 @@ body {
 
 .form-search .date-on {
 	margin-bottom: 28px;
+	position: relative;
 }
 
 .date-on input[type="text"] {
@@ -365,6 +366,7 @@ body {
 
 .form-search .date-off {
 	margin-bottom: 32px;
+	position: relative;
 }
 
 .date .field {
@@ -385,13 +387,79 @@ body {
 	text-align: center;
 }
 
+.calendar {
+	background-image: url("../img/calendar-gray.svg");
+	background-repeat: no-repeat;
+	background-color: transparent;
+	border: none;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 7px;
+	right: 4px;
+	outline: none;
+}
+
+.calendar:hover {
+	background-image: url("../img/calendar.svg");
+	background-repeat: no-repeat;
+}
+
+.calendar:focus,
+.calendar:active {
+	background-image: url("../img/calendar-blue.svg");
+	background-repeat: no-repeat;
+}
+
 .form-people .baby {
 	margin-left: 50px;
+}
+
+.baby input[type="text"] {
+	margin-left: 20px;
+}
+
+.form-people {
 	position: relative;
 }
 
-.form-people .baby + input[type="text"] {
-	margin-left: 21px;
+.form-people input[type="button"] {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    color: #a9a9a9;
+    width: 25px;
+    height: 25px;
+}
+
+.form-people input[type="button"]:hover {
+	color: #000000;
+}
+
+.form-people input[type="button"]:focus, 
+.form-people input[type="button"]:active {
+	color: #81b3d2;
+}
+
+.form-people .minus {
+	top: 6px;
+	left: 115px;
+}
+
+.form-people .plus {
+	top: 6px;
+	left: 190px;
+}
+
+.form-people .minus-two {
+	top: 6px;
+	right: 85px;
+}
+
+.form-people .plus-two {
+	top: 6px;
+	right: 8px;
 }
 
 .form-search .btn-blue {
