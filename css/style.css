@@ -341,9 +341,65 @@ body {
 	box-shadow: 0 0 7px 5px rgba(0, 1, 1, 0.2);
 }
 
+.form-search .wraper-form {
+	margin: 56px 57px;
+}
+
+.form-search input[type="text"] {
+	width: 314px;
+	height: 36px;
+	margin-right: 0px;
+	padding-left: 11px;
+	padding-right: 20px;
+	margin-left: 15px;
+	border: none;
+}
+
+.form-search .date-on {
+	margin-bottom: 28px;
+}
+
+.date-on input[type="text"] {
+	margin-left: 19px;
+}
+
+.form-search .date-off {
+	margin-bottom: 32px;
+}
+
+.date .field {
+	margin-left: 5px;
+}
+
+.form-people input[type="text"] {
+	width: 35px;
+	height: 30px;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 40px;
+}
+
+.form-people input[type="text"] {
+	margin-left: 34px;
+	height: 36px;
+	text-align: center;
+}
+
+.form-people .baby {
+	margin-left: 50px;
+	position: relative;
+}
+
+.form-people .baby + input[type="text"] {
+	margin-left: 21px;
+}
+
 .form-search .btn-blue {
 	font-size: 21px;
 	line-height: 26px;
+	width: 100%;
+	height: 58px;
+	border: 1px solid #81b3d2;
 }
 
 .map {
@@ -363,6 +419,7 @@ body {
 
 .form-search input::placeholder {
 	color: #000000;
+	text-transform: uppercase;
 }
 
 .btn {
@@ -432,13 +489,7 @@ body {
 	outline: 0;
 }
 
-.date {
-	margin: 0 auto;
-}
 
-.date-on {
-	margin-top: 50px;
-}
 
 .main-footer {
 	display: flex;
