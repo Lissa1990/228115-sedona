@@ -141,9 +141,6 @@ body {
 .welcome img {
 	width: 458px;
 	height: 352px;
-	position: absolute;
-    top: 78px;
-    left: 370px;
 }
 
 .sedona {
@@ -330,6 +327,17 @@ body {
 
 .form {
 	min-height: 767px;
+	position: relative;
+}
+
+.form-search {
+	position: absolute;
+	width: 570px;
+	min-height: 395px;
+	top: 293px;
+	left: 315px;
+	background: #ffffff;
+	box-shadow: 0 0 7px 5px rgba(0, 1, 1, 0.2);
 }
 
 .form-search .btn-blue {
