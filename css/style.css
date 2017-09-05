@@ -1091,8 +1091,8 @@ body {
 	align-items: flex-start;
 	justify-content: flex-start;
 	padding: 0 70px;
-	padding-top: 28px;
-	padding-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 26px;
 }
 
 .hotel .wraper-img {
@@ -1112,6 +1112,12 @@ body {
 
 .hotels .hotels-villas {
 	border-bottom: 1px solid #cacaca;
+}
+
+.hotels-btn {
+	margin: 0;
+	padding: 0;
+	margin-top: 14px;
 }
 
 .hotels-btn .btn {
@@ -1142,9 +1148,10 @@ body {
 
 .hotel .title {
 	font-size: 21px;
-	line-height: 24px;
+	line-height: 18px;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 7px;
 }
 
 .hotel td {
