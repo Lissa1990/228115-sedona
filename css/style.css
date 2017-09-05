@@ -124,11 +124,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	width: 100%;
 }
 
 .welcome::after {
 	content: "";
-	width: 1200px;
+	width: 100%;
 	height: 59px;
 	background-image: url("../img/mask.png");
 	background-repeat: no-repeat;
@@ -423,7 +424,7 @@ body {
 	position: relative;
 }
 
-.form-people input[type="button"] {
+.form-people button {
     position: absolute;
     background-color: transparent;
     border: none;
@@ -434,12 +435,12 @@ body {
     height: 25px;
 }
 
-.form-people input[type="button"]:hover {
+.form-people button:hover {
 	color: #000000;
 }
 
-.form-people input[type="button"]:focus, 
-.form-people input[type="button"]:active {
+.form-people button:focus, 
+.form-people button:active {
 	color: #81b3d2;
 }
 
@@ -687,6 +688,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: 0 -55px;
 	min-height: 205px;
+	width: 100%;
 }
 
 .filtering-cost {
@@ -820,13 +822,15 @@ body {
 	display: block;
 	background-color: transparent;
 	border: 2px solid #ffffff;
-	padding: 7px 29px;
+	padding: 6px 29px;
 	border-radius: 2px;
 	outline: 0;
 	cursor: pointer;
 	margin-left: 87px;
 	margin-bottom: 0px;
 	font-weight: normal;
+	width: 76px;
+	text-align: center;
 }
 
 .filtering-btn:hover {
