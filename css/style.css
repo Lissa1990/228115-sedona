@@ -1,13 +1,13 @@
 @font-face { 
   font-family: "PT Sans"; 
-  src: url("../fonts/ptsans.woff2") format("woff2"); 
+  src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff"); 
   font-weight: normal; 
   font-style: normal; 
 }
 
 @font-face { 
   font-family: "PT Sans"; 
-  src: url("../fonts/ptsansbold.woff2") format("woff2"); 
+  src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff"); 
   font-weight: bold; 
   font-style: normal; 
 }
@@ -182,9 +182,13 @@ body {
 }
 
 .item-content .caption {
-	width: 153px;	
+	width: 175px;	
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.item-content .tourist {
+	width: 160px;
 }
 
 .item-content p {
@@ -337,18 +341,26 @@ body {
 	box-shadow: 0 6px 7px 5px rgba(0, 1, 1, 0.2);
 }
 
-.form-search .wraper-form {
+.form-search form {
 	margin: 56px 56px;
 }
 
+.date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 4px;
+}
+
 .form-search input[type="text"] {
-	width: 314px;
+	width: 345px;
 	height: 36px;
 	margin-right: 0px;
 	padding-left: 11px;
 	padding-right: 20px;
 	margin-left: 15px;
 	border: none;
+	box-sizing:border-box;
 }
 
 .form-search .date-on {
@@ -361,7 +373,7 @@ body {
 }
 
 .form-search .date-off {
-	margin-bottom: 32px;
+	margin-bottom: 28px;
 	position: relative;
 }
 
@@ -369,18 +381,31 @@ body {
 	margin-left: 5px;
 }
 
-.form-people input[type="text"] {
-	width: 49px;
-	height: 36px;
-	margin-bottom: 38px;
+.wraper-push {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	border: none;
 	margin-left: 35px;
-	text-align: center;
-	padding-right: 32px;
-	padding-left: 32px;
+	background-color: #f2f2f2;
+	height: 38px;
+	margin-bottom: 53px;
 }
 
-.form-people label {
-	margin-right: 4px;
+.wraper-push input[type="text"] {
+	width: 36px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	box-sizing:border-box;
+}
+
+.push-child {
+	margin-left: 19px;
+}
+
+.form-people .baby {
+	margin-left: 50px;
 }
 
 .calendar {
@@ -394,6 +419,7 @@ body {
 	top: 7px;
 	right: 4px;
 	outline: none;
+	cursor: pointer;
 }
 
 .calendar:hover {
@@ -407,56 +433,24 @@ body {
 	background-repeat: no-repeat;
 }
 
-.form-people .baby {
-	margin-left: 50px;
-}
-
-.baby input[type="text"] {
-	margin-left: 20px;
-}
-
-.form-people {
-	position: relative;
-}
-
-.form-people button {
-    position: absolute;
+.wraper-push .push {
     background-color: transparent;
     border: none;
     font-weight: bold;
     font-size: 20px;
     color: #a9a9a9;
-    width: 25px;
-    height: 25px;
+    width: 36px;
+    height: 36px;
 }
 
 .form-people button:hover {
 	color: #000000;
+	cursor: pointer;
 }
 
 .form-people button:focus, 
 .form-people button:active {
 	color: #81b3d2;
-}
-
-.form-people .minus {
-	top: 6px;
-	left: 117px;
-}
-
-.form-people .plus {
-	top: 7px;
-	left: 192px;
-}
-
-.form-people .minus-two {
-	top: 6px;
-	right: 82px;
-}
-
-.form-people .plus-two {
-	top: 7px;
-	right: 6px;
 }
 
 .form-search .btn-blue {
@@ -513,6 +507,7 @@ body {
 
 .btn-blue:hover {
 	background-color: #669ec0;
+	cursor: pointer;
 }
 
 .btn-blue:focus,
@@ -623,12 +618,12 @@ body {
 
 .academy {
 	display: flex;
-	width: 205px;
+	width: 211px;
 	justify-content: flex-end;
 	align-items: center;
 	font-size: 14px;
 	line-height: 26px;
-	margin-left: 10px;
+	
 	padding-right: 100px;
 	padding-bottom: 1px;
 }
@@ -825,6 +820,7 @@ body {
 	margin-bottom: 0px;
 	font-weight: normal;
 	text-align: center;
+	cursor: pointer;
 }
 
 .filtering-btn:hover {

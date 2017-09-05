@@ -29,14 +29,14 @@
                 <article class="advantage">                           
         	        <section class="sedona">
                         <h3 class="visually-hidden">Town</h3>    
-        	            <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        	            <b>Седона − небольшой городок в Аризоне, заслуживающий большего!</b>
         	            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
                     </section>
         	        <section class="advantage-item">
                         <div class="item-content town">
                             <h3 class="caption">Настоящий городок</h3>
-        			        <span>— №1 —</span>
-        			        <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        			        <span>− №1 −</span>
+        			        <p>Седона − не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
         			    <img src="img/town.jpg" alt="Настоящий городок" width="800" height="256">
                     </section>
@@ -61,7 +61,7 @@
                         <div class="item-content bridge">
         			        <h3 class="caption">Там есть<br>
                              мост дьявола</h3>
-        			        <span>— №2 —</span>
+        			        <span>− №2 −</span>
         			        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
         		    </section>
@@ -69,17 +69,17 @@
                         <ul class="advantages-list">
         			        <li class="item-content item-list">
         				        <h3 class="caption">Небольшая площадь</h3>
-        				        <span>— №3 —</span>
+        				        <span>− №3 −</span>
         				        <p class="area">Все достопримечательности находятся очень близко</p>
         			        </li>
         			        <li class="item-content item-list">
         				        <h3 class="caption">Красивая дорога</h3>
-        				        <span>— №4 —</span>
+        				        <span>− №4 −</span>
         				        <p class="road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         			        </li>
         			        <li class="item-content item-list">
-        				        <h3 class="caption">Мало туристов</h3>
-        				        <span>— №5 —</span>
+        				        <h3 class="caption tourist">Мало туристов</h3>
+        				        <span>− №5 −</span>
         				        <p>Большинство едет в Гранд Каньон и толпиться там</p>
         			        </li>
         		        </ul>
@@ -98,7 +98,6 @@
                     </section>
                    <section class="form-search">
         		        <form method="post" action="#">
-                            <div class="wraper-form">
         			        <p class="date date-on">
         				        <label for="date-on">Дата заезда: </label>
         				        <input class="field" type="text" name="date-on" id="date-on" placeholder="24 апреля 2017"> 
@@ -109,21 +108,20 @@
         				        <input class="field" type="text" name="date-off" id="date-off" placeholder="4 июля 2017">
                                 <button class="calendar"><span class="visually-hidden">Календарь</span></button>
         			        </p>
-        			        <p class="form-people">
-        				        <label for="grownups">Взрослые: 
+        			        <div class="form-people">
+        				        <label for="grownups">Взрослые: </label>
+                                <fieldset class="wraper-push">
+                                    <button class="push" type="button">−</button>
         				            <input class="field" type="text" name="grownups" id="grownups" placeholder="2">
-                                </label>
-                                    <button class="minus">−</button>
-                                    <button class="plus">+</button>
-                                
-        				        <label class="baby" for="children">Дети: 
+                                    <button class="push" type="button">+</button>
+                                </fieldset>
+        				        <label class="baby" for="children">Дети: </label>
+                                <fieldset class="wraper-push push-child">
+                                    <button class="push" type="button">−</button>
         				            <input class="field" type="text" name="children" id="children" placeholder="0">
-                                </label>
-                                    <button class="minus-two">−</button>
-                                    <button class="plus-two">+</button>
-                                
-        			        </p>
-        			        <input class="btn btn-blue" type="submit" name="button" value="Найти">
+                                    <button class="push" type="button">+</button>
+                                </fieldset>
+        			            <input class="btn btn-blue" type="submit" name="button" value="Найти">
                             </div>
         		        </form>
                     </section>
