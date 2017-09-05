@@ -1088,15 +1088,17 @@ body {
 .hotel {
 	border-top: 1px solid #cacaca;
 	display: flex;
-	min-height: 150px;
 	align-items: flex-start;
 	justify-content: flex-start;
-	padding: 30px 70px;
+	padding: 0 70px;
+	padding-top: 28px;
+	padding-bottom: 20px;
 }
 
 .hotel .wraper-img {
 	height: 90px;
 	overflow: hidden;
+	padding-left: 1px;
 }
 
 .hotel img {
@@ -1142,6 +1144,7 @@ body {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
+	padding: 0;
 }
 
 .hotel td {
@@ -1150,6 +1153,7 @@ body {
 
 .parameter {
 	width: 363px;
+	margin-left: 30px;
 }
 
 .score {
@@ -1165,6 +1169,7 @@ body {
 	height: 17px;
 	background-image: url("../img/star.svg");
 	background-repeat: no-repeat;
+	margin-bottom: 40px;
 }
 
 .score .rating {
