@@ -822,14 +822,13 @@ body {
 	display: block;
 	background-color: transparent;
 	border: 2px solid #ffffff;
-	padding: 6px 29px;
+	padding: 7px 29px;
 	border-radius: 2px;
 	outline: 0;
 	cursor: pointer;
 	margin-left: 87px;
 	margin-bottom: 0px;
 	font-weight: normal;
-	width: 76px;
 	text-align: center;
 }
 
