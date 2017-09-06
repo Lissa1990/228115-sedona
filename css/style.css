@@ -336,6 +336,7 @@ body {
 	font-size: 21px;
 	line-height: 26px;
 	display: inline-block;
+	vertical-align: top;
 	width: 568px;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -396,6 +397,7 @@ body {
 
 .wraper-push {
 	display: inline-block;
+	vertical-align: baseline;
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -411,6 +413,8 @@ body {
 	margin: 0;
 	text-align: center;
 	box-sizing:border-box;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .push-child {
@@ -616,6 +620,7 @@ iframe {
 
 .social-item {
 	display: inline-block;
+	vertical-align: baseline;
 	width: 46px;
 	height: 48px;
 }
@@ -1099,11 +1104,13 @@ iframe {
 
 .found {
 	display: inline-block;
+	vertical-align: top;
     margin: 0 auto;
 }
 
 .sort {
 	display: inline-block;
+	vertical-align: top;
     margin: 0 auto;
 }
 
@@ -1198,6 +1205,7 @@ iframe {
 
 .stars span {
 	display: inline-block;
+	vertical-align: baseline;
 	width: 20px;
 	height: 17px;
 	background-image: url("../img/star.svg");
