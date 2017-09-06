@@ -27,52 +27,34 @@
                         <div class="filter-item">
                             <h3 class="caption">Инфраструктура:</h3>
                             <ul>
-                                <li class="pool-checkbox">
-                                    <label for="pool" class="label-checkbox">
-                                        <input type="checkbox" name="pool" id="pool" checked class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Бассейн
-                                    </label>
+                                <li class="checkbox pool-checkbox">
+                                    <input type="checkbox" name="pool" id="pool" checked class="visually-hidden">
+                                    <label for="pool" class="label-checkbox">Бассейн</label>
                                 </li>
-                                <li class="parking-checkbox">
-                                    <label for="parking" class="label-checkbox">
-                                        <input type="checkbox" name="parking" id="parking" class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Парковка
-                                    </label>
+                                <li class="checkbox parking-checkbox">
+                                    <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+                                    <label for="parking" class="label-checkbox">Парковка</label>
                                 </li>
-                                <li class="wi-fi-checkbox">
-                                    <label for="wi-fi" class="label-checkbox">
-                                        <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Wi-fi
-                                    </label>
+                                <li class="checkbox wi-fi-checkbox">
+                                    <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+                                    <label for="wi-fi" class="label-checkbox">Wi-fi</label>
                                 </li>
                             </ul>
                         </div>
                         <div class="filter-item complex">
                             <h3 class="caption">Тип жилья:</h3>
                             <ul>
-                                <li class="hotel-checkbox">
-                                    <label for="hotel" class="label-checkbox">
-                                        <input type="checkbox" name="hotel" id="hotel" checked class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Гостиница
-                                    </label>
+                                <li class="checkbox hotel-checkbox">
+                                    <input type="checkbox" name="hotel" id="hotel" checked class="visually-hidden">
+                                    <label for="hotel" class="label-checkbox">Гостиница</label>
                                 </li>
-                                <li class="motel-checkbox">
-                                    <label for="motel" class="label-checkbox">
-                                        <input type="checkbox" name="motel" id="motel" checked class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Мотель
-                                    </label>
+                                <li class="checkbox motel-checkbox">
+                                    <input type="checkbox" name="motel" id="motel" checked class="visually-hidden">
+                                    <label for="motel" class="label-checkbox">Мотель</label>
                                 </li>
-                                <li class="apartment-checkbox">
-                                    <label for="apartment" class="label-checkbox">
-                                        <input type="checkbox" name="apartment" id="apartment" checked class="visually-hidden">
-                                        <span class="indicator"></span>
-                                        Апартаменты
-                                    </label>
+                                <li class="checkbox apartment-checkbox">
+                                    <input type="checkbox" name="apartment" id="apartment" checked class="visually-hidden">
+                                    <label for="apartment" class="label-checkbox">Апартаменты</label>
                                 </li>
                             </ul>
                         </div>
@@ -89,7 +71,7 @@
                                 <div class="range-btn btn-min"></div>
                                 <div class="range-btn btn-max"></div>
                             </div>
-                            <button class="btn filtering-btn">Показать</button>
+                            <button class="btn filtering-btn" type="submit">Показать</button>
                         </div>
                     </form>
                 </section>
@@ -113,12 +95,10 @@
                         </div>
                         <section class="parameter">
                             <h2 class="title"><a href="#">Amara resort &amp; spa</a></h2>
-                            <table class="hotels-cost">
-                                <tr>
-                                    <td>Гостиница</td>
-                                    <td>От 4000 Р.</td>
-                                </tr>
-                            </table>
+                            <p class="hotels-cost">
+                                <span>Гостиница</span>
+                                <span class="cost-amara">От 4000 Р.</span>
+                            </p>
                             <p class="hotels-btn">
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
@@ -140,12 +120,10 @@
                         </div>
                         <section class="parameter">
                             <h2 class="title"><a href="#">Desert quail inn</a></h2>
-                            <table class="hotels-cost">
-                                <tr>
-                                    <td>Мотель</td>
-                                    <td>От 3000 Р.</td>
-                                </tr>
-                            </table>
+                            <p class="hotels-cost">
+                                <span>Мотель</span>
+                                <span class="cost-desert">От 3000 Р.</span>
+                            </p>
                             <p class="hotels-btn">
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
@@ -166,12 +144,10 @@
                         </div>
                         <section class="parameter">
                             <h2 class="title"><a href="#">Villas at poco diablo</a></h2>
-                            <table class="hotels-cost">
-                                <tr>
-                                    <td>Апартаменты</td>
-                                    <td>От 2000 Р.</td>
-                                </tr>
-                            </table>
+                            <p class="hotels-cost">
+                                <span>Апартаменты</span>
+                                <span class="cost-villas">От 2000 Р.</span>
+                            </p>
                             <p class="hotels-btn">
                                 <a href="#" class="btn btn-blue">Подробнее</a>
                                 <a href="#" class="btn btn-brown">Забронировать</a>
