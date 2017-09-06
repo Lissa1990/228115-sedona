@@ -476,11 +476,18 @@ body {
 
 .map {
 	height: 473px;
+	position: relative;
 }
 
 .map img {
 	width: 1200px;
 	height: 593px;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .form-search label {
