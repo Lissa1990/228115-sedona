@@ -548,7 +548,9 @@ body {
 	outline: 0;
 }
 
-
+.form-close {
+	display: none;
+}
 
 .main-footer {
 	display: flex;
