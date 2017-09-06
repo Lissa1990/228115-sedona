@@ -12,6 +12,19 @@
   font-style: normal; 
 }
 
+@keyframes open{
+	0% {transform: translateX(-2000px);}
+	70% {transform: translateX(30px);}
+	90% {transform: translateX(-10px);}
+	100% {transform: translateX(0px);}
+}
+
+@keyframes shake{
+	0%, 100% {transform: translateX(0px);}
+	10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+	20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -546,6 +559,16 @@ body {
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
 	outline: 0;
+}
+
+.form-open {
+    animation-name: open;
+    animation-duration: 0.6s;
+}
+
+.form-error {
+	animation-name: shake;
+    animation-duration: 0.6s;
 }
 
 .form-close {

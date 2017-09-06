@@ -8,6 +8,7 @@ var children = document.querySelector("[name=children]");
 
 link.addEventListener("click", function (evt) {evt.preventDefault(); modal.classList.toggle("form-close");});
 form.addEventListener("submit", function (evt) {evt.preventDefault(); 
-	if (!dateon.value  || !dateoff.value || !grownups.value || !children.value) {evt.preventDefault(); console.log(Error)}});
+	if (!dateon.value  || !dateoff.value || !grownups.value || !children.value) {evt.preventDefault(); modal.classList.add("form-error")} 
+	else {modal.classList.remove("form-error")}});
 window.addEventListener("keydown", function (evt) {
 	if (evt.keyCode === 27) {if (!modal.classList.contains("form-close")) {modal.classList.add("form-close")}}});
