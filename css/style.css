@@ -1132,12 +1132,10 @@ iframe
     padding: 7px 29px;
 
     cursor: pointer;
-    cursor: pointer;
     text-align: center;
 
     border: 2px solid #fff;
     border-radius: 2px;
-    outline: 0;
     background-color: transparent;
 }
 
@@ -1600,18 +1598,3 @@ iframe
 {
     padding: 5px 14px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
