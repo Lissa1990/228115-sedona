@@ -1566,7 +1566,7 @@ input[type='checkbox']:checked:disabled + .label-checkbox::before
     align-items: flex-end;
 }
 
-.stars span
+.stars .star
 {
     display: inline-block;
 
