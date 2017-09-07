@@ -1546,19 +1546,14 @@ input[type='checkbox']:checked:disabled + .label-checkbox::before
     padding-bottom: 5px;
 }
 
-.hotels-cost .cost-amara
+.hotels-cost .type
 {
-    padding-left: 35px;
-}
+    display: inline-block;
 
-.hotels-cost .cost-desert
-{
-    padding-left: 60px;
-}
+    width: 110px;
+    margin-right: 2px;
 
-.hotels-cost .cost-villas
-{
-    padding-left: 19px;
+    vertical-align: baseline;
 }
 
 .score
